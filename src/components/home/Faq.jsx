@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CustomButton from '../../common/CustomButton';
-import { FAQ_LIST, FAQ_TEXT } from '../../utils/helper';
+import { FAQ_LIST, KEY_LIST } from '../../utils/helper';
 import SubHeading from '../../common/SubHeading';
 
 const Faq = () => {
@@ -11,17 +11,17 @@ const Faq = () => {
     };
 
     return (
-        <div className="bg-[#F7F9FB]">
-            <div className='container pt-[164px] max-xl:pt-32 max-lg:pt-20 max-md:pt-14 max-sm:pt-7 mx-auto px-5 lg:px-0 max-w-[1200px]'>
+        <div className="bg-[#F7F9FB] overflow-hidden">
+            <div className='container xl:pt-[164px] xl:pb-[148px] lg:pb-20 lg:pt-20 md:pb-14 pb-7 md:pt-14 pt-7 mx-auto px-5 lg:px-5 xl:px-0 max-w-[1200px]'>
                 <div className='flex gap-12 max-xl:gap-9 max-md:gap-6 max-xl:flex-wrap max-xl:justify-center'>
                     <div className='w-6/12 max-xl:w-full relative'>
                         <img src="./assets/image/webp/faq-girl.webp" alt="working-girl"
-                            className='w-full max-w-[600px] max-xl:mx-auto max-lg:max-w-none sticky top-0' />
+                            className='w-full sticky top-0' />
                     </div>
                     <div className='w-6/12 max-xl:w-full'>
                         <SubHeading text="Key Q&A" myClass="text-start" />
                         <ul className='translate-x-[18px]'>
-                            {FAQ_TEXT.map((item, i) => (
+                            {KEY_LIST.map((item, i) => (
                                 <li className='list-disc text-bas font-normal text-deep-blue leading-[28px] max-xl:max-w-none  max-w-[552px]'
                                     key={i}> {item}
                                 </li>
@@ -58,7 +58,7 @@ const Faq = () => {
                             ))}
                         </div>
                         <div className='w-[116px] mt-6'>
-                            <CustomButton buttonText='Get a demo' />
+                            <CustomButton buttonText='Get a demo' myClass='!leading-[20px] px-[14.5px] py-[11px]' />
                         </div>
                     </div>
                 </div>

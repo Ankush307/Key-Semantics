@@ -20,7 +20,12 @@ export const KEY_SEMANTICS_WORK_LIST = [
             "Our enterprise-grade semantic search engine allows you to query your content in many ways. You’ll be amazed by the speed, precision and relevance of the results! ",
     },
 ];
-export const FAQ_TEXT = [
+export const KEY_LIST = [
+    "Let customers discover your content using AI-generated questions and answers",
+    "Seamlessly integrated into the Semantic Search experience",
+    "LLM-powered Question Answering",
+];
+export const SEARCH_LIST = [
     "Let customers discover your content using AI-generated questions and answers",
     "Seamlessly integrated into the Semantic Search experience",
     "LLM-powered Question Answering",
@@ -76,3 +81,14 @@ export const FAQ_LIST = [
             "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
 ];
+
+export const HEADLESS_LIST = [
+    "API-First / Headless => integrate seamlessly with your applications",
+    "Combine data from multiple sources",
+    "Push / Crawl => Your choice: Push your data to our APIs or let our crawlers crawl your content",
+];
+
+export const SECURITY_LIST = [
+    "SaaS => we provide the search infrastructure so you can focus on your applications",
+    "Hosted in a Swiss datacenter by Microsoft"
+]

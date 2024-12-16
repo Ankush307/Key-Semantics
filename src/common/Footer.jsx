@@ -14,8 +14,8 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-deep-blue h-full">
-            <div className="container relative mx-auto ">
+        <footer className="bg-deep-blue h-full ">
+            <div className="container relative mx-auto px-5 overflow-hidden">
                 <p className="absolute top-0 left-0 max-sm:hidden">
                     <FOOTER_LEFT_ICON />
                 </p>
@@ -40,7 +40,7 @@ const Footer = () => {
                         <p className="text-[10px] font-normal leading-[14px] text-center text-lavender-purple pt-4 pb-6">
                             By submitting my contact information I agree to the KeySemantics Privacy Policy
                         </p>
-                        <CustomButton buttonText="Request a demo" myClass="bg-sky-blue !text-white mb-24 hover:bg-sky-blue" type="submit" />
+                        <CustomButton buttonText="Request a demo" myClass="!font-medium traking-[-1%] leading-[20px] text-sm bg-sky-blue !text-white sm:mb-14 mb-6 lg:mb-24 hover:bg-sky-blue py-[15px] px-9" type="submit" />
                     </form>
                 </div>
                 <p className="absolute bottom-0 right-0 max-sm:hidden">
