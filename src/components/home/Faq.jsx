@@ -11,12 +11,12 @@ const Faq = () => {
     };
 
     return (
-        <div className="bg-[#F7F9FB] overflow-hidden">
-            <div className='container xl:pt-[164px] xl:pb-[148px] lg:pb-20 lg:pt-20 md:pb-14 pb-7 md:pt-14 pt-7 mx-auto px-5 lg:px-5 xl:px-0 max-w-[1200px]'>
+        <div className="bg-[#F7F9FB] max-xl:overflow-hidden">
+            <div className='container xl:pt-[164px] lg:pt-20 md:pt-14 mx-auto px-5 lg:px-5 xl:px-0 max-w-[1200px]'>
                 <div className='flex gap-12 max-xl:gap-9 max-md:gap-6 max-xl:flex-wrap max-xl:justify-center'>
                     <div className='w-6/12 max-xl:w-full relative'>
                         <img src="./assets/image/webp/faq-girl.webp" alt="working-girl"
-                            className='w-full max-w-[600px] max-xl:mx-auto max-xl:max-w-none sticky top-0' />
+                            className='w-full max-w-[600px] max-xl:mx-auto max-xl:max-w-none sticky top-0'/>
                     </div>
                     <div className='w-6/12 max-xl:w-full'>
                         <SubHeading text="Key Q&A" myClass="text-start" />
