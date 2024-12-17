@@ -3,6 +3,8 @@ import { FOOTER_LEFT_ICON, FOOTER_RIGHT_ICON } from '../utils/icon';
 import CustomButton from './CustomButton';
 
 const Footer = () => {
+    const getFullYear = () => new Date().getFullYear();
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [company, setCompany] = useState('');
@@ -40,7 +42,7 @@ const Footer = () => {
                         <p className="text-[10px] font-normal leading-[14px] text-center text-lavender-purple pt-4 pb-6">
                             By submitting my contact information I agree to the KeySemantics Privacy Policy
                         </p>
-                        <CustomButton buttonText="Request a demo" myClass="!font-medium traking-[-1%] leading-[20px] text-sm bg-sky-blue !text-white sm:mb-14 mb-6 lg:mb-24 hover:bg-sky-blue py-[15px] px-9" type="submit" />
+                        <CustomButton buttonText="Request a demo" myClass="!font-medium traking-[-1%] leading-[20px] text-sm bg-sky-blue !text-white sm:mb-14 mb-6 lg:mb-24 hover:!bg-white hover:!text-deep-blue transition-all duration-300 ease-linear py-[15px] px-9" type="submit" />
                     </form>
                 </div>
                 <p className="absolute bottom-0 right-0 max-sm:hidden">
@@ -48,9 +50,9 @@ const Footer = () => {
                 </p>
             </div>
             <div className="bg-[#111235] p-6">
-                <div className="container flex items-center justify-between max-sm:flex-col max-sm:justify-center">
+                <div className="container flex items-center justify-between max-sm:flex-col max-sm:justify-center mx-auto">
                     <p className="text-xs font-normal text-lavender-purple leading-[28px] max-sm:text-center">
-                        ©2024 KeySemantics GmbH | Ramsenburgweg 24, 9100 Herisau, Switzerland
+                        ©<span>{getFullYear()}</span> KeySemantics GmbH | Ramsenburgweg 24, 9100 Herisau, Switzerland
                     </p>
                     <p className="text-xs font-normal text-lavender-purple leading-[28px]">info@keysemantics.ch</p>
                 </div>
