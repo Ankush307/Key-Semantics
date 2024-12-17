@@ -12,6 +12,7 @@ module.exports = {
         'lily-white': '#E3F7FA',
         'sky-blue': '#48C3D7',
         'lavender-purple': '#7C7DB9',
+        'ghost-gray': '#C9CAD4',
       },
       backgroundImage: {
         'hero-image': "url('../public/assets/image/webp/hero-bg.webp')",
