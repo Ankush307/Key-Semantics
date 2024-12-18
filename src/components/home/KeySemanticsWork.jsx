@@ -13,7 +13,7 @@ const KeySemanticsWork = () => {
                 {KEY_SEMANTICS_WORK_LIST.map((obj, i) => (
                     <div key={i}>
                         <Lottie animationData={obj.cardImg} loop={true} />
-                        <p className='font-normal text-base text-darkBlue max-w-[285px] text-center pt-6'>{obj.discription}</p>
+                        <p className='font-normal text-base text-darkBlue max-w-[285px] text-center pt-6 sm:pb-5 lg:pb-0'>{obj.discription}</p>
                     </div>
                 ))}
             </div>
